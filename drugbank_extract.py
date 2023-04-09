@@ -23,7 +23,7 @@ def traverse_xml(node, level):
 
 def get_all_data_from_xml():
     tree = ET.ElementTree()
-    t = tree.parse('D:/artical_code/other/first/data/full database.xml')
+    t = tree.parse('full database.xml')
     childtag = t[0].tag
     children = t.findall(childtag)
     data = []
@@ -145,7 +145,7 @@ def get_all_data_from_xml():
 
 def get_toxicity():
     tree = ET.ElementTree()
-    t = tree.parse('D:/artical_code/other/first/data/full database.xml')
+    t = tree.parse('full database.xml')
     childtag = t[0].tag
     children = t.findall(childtag)
     data = []
@@ -214,7 +214,7 @@ def get_toxicity():
 
 def get_properties():
     tree = ET.ElementTree()
-    t = tree.parse('D:/artical_code/other/first/data/full database.xml')
+    t = tree.parse('full database.xml')
     childtag = t[0].tag
     children = t.findall(childtag)
     dict_name_description = {}
